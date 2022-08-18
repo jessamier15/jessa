@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <script src="bootstrap/jquery-3.6.0.min.js"></script>
+  <title>Document</title>
+</head>
+<style>
+
+  .nav-item:hover {
+    background-color: floralwhite;
+  }
+</style>
+
+
+<body style="background-color:linen;">
+
+  <div style="background-color:#FFC0CB;">
+    <span style="margin-left:40% ;font-weight:900;color:mediumvioletred;font-size:300%;font-family: 'Uchen', serif;">Jes<span
+        style="color:rebeccapurple;font-family: 'Uchen', serif;">SHAN<i class="fas fa-shopping-basket"></i></span></span>
+    <form class="d-flex" role="search">
+      <input class="form me-2" type="search" placeholder="Search product, brands and more" aria-label="Search"
+        style="margin-left: 28%; width: 40%;margin-top: 5px;">
+      <button class="btn btn-outline-success" type="submit"
+        style="font-weight:900 ;color: black;background-color: salmon;">Search</button> 
+    </form>
+
+
+    <br>
+  </div>
+
+  <nav class="navbar navbar-expand-lg" style="background-color:salmon;">
+    <div class="container-fluid">
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 25%;" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html"
+              style="font-weight:900 ; font-size:larger; margin-right: 50px;">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html" 
+              style="font-weight:900 ; font-size:larger; margin-right: 50px;">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="font-weight:900 ; font-size:larger;color: black; margin-right: 50px;">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products/men.html" style="font-weight:900 ; font-size:larger">Men</a>
+              </li>
+              <li><a class="dropdown-item" href="products/women.html"
+                  style="font-weight:900 ; font-size:larger">Women</a></li>
+
+              <li><a class="dropdown-item" href="products/kids.html" style="font-weight:900 ; font-size:larger">Kids</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="font-weight:900 ; font-size:larger;color:black; margin-right: 50px;">
+              Gadgets
+            </a>
+            <ul class="dropdown-menu" >
+              <li><a class="dropdown-item" href="gadgets/mobile.html"
+                  style="font-weight:900 ; font-size:larger">Mobiles</a></li>
+              <li><a class="dropdown-item" href="gadgets/laptops.html"
+                  style="font-weight:900 ; font-size:larger">Laptop</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cart.html" style="font-weight:900 ; font-size:larger;margin-left: 10px;"><i class="fa fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+
+      </div><br>
+
+    </div>
+  </nav><br>
+  <div>
+    <img src="homepic.jpg" width="80%" style="margin-left:10%;margin-top:-20px;">
+  </div>
+
+  <div>
+    <h2 class="text-danger" style="margin-left: 20px;font: bolder;">DAILY DISCOVER</h2>
+  </div>
+
+  <!-- 1st SECTION -->
+  <section>
+    <div class="d-flex">
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">Nokia 105</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱1,499.00 </span>&nbsp;&nbsp;&nbsp;<span>₱299.00</span></h3>
+          <img class="card-text" src="images/gadgets/cp1.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart1">Add to Cart</a>
+
+          <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a><br>
+
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">100 sold</span>
+
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">Realme C21y case</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱99.00 </span>&nbsp;&nbsp;&nbsp;<span>₱35.00</span></h3>
+          <img class="card-text" src="images/gadgets/cp18.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart2">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">645 sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">diflated pool</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱1,499.00 </span>&nbsp;&nbsp;&nbsp;<span>₱999.00</span></h3>
+          <img class="card-text" src="images/kids/kid17.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart3">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">242 sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">Hawaiian flower men polo</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱180.00 </span>&nbsp;&nbsp;&nbsp;<span>₱99.00</span></h3>
+          <img class="card-text" src="images/men/men16.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart4">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">20k sold</span>
+        </div>
+      </div>
+    </div>
+  </section><br>
+
+
+
+  <section>
+    <div class="d-flex">
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">Nike basketball shoes</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱1,599.00 </span>&nbsp;&nbsp;&nbsp;<span>₱499.00</span></h3>
+          <img class="card-text" src="images/men/men8.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart5">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">2.5k sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">18k saudi gold money tree</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱350.00 </span>&nbsp;&nbsp;&nbsp;<span>₱199.00</span></h3>
+          <img class="card-text" src="images/men/men10.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart6">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">6k sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">womens fairy mesh dress</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱499.00 </span>&nbsp;&nbsp;&nbsp;<span>₱199.00</span></h3>
+          <img class="card-text" src="images/women/women11.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart7">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;" font-weight:bolder;>5.6k sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">white printed polo</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱399.00 </span>&nbsp;&nbsp;&nbsp;<span>₱59.00</span></h3>
+          <img class="card-text" src="images/men/men13.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart8">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">1.2k sold</span>
+        </div>
+      </div>
+    </div>
+  </section><br><br>
+
+
+  <div>
+    <h2 class="text-danger" style="margin-left: 20px;font: bolder;">PROMOS</h2>
+  </div>
+
+  <!-- 2st SECTION -->
+  <section>
+    <div class="d-flex">
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">Vintage Style Heart Pendant Bracelet</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱99.00 </span>&nbsp;&nbsp;&nbsp;<span>₱49.00</span></h3>
+          <img class="card-text" src="images/women/women7.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart9">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">4.5k sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">Z8350 quadcore laptop</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱9,000 </span>&nbsp;&nbsp;&nbsp;<span>₱5,000</span></h3>
+          <img class="card-text" src="images/gadgets/laptop1.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart10">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">6.1k sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">Korean Woman Flat Slipper</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱105 </span>&nbsp;&nbsp;&nbsp;<span>₱55</span></h3>
+          <img class="card-text" src="images/women/women5.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart11">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">864 sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">dell dual core</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱14,000 </span>&nbsp;&nbsp;&nbsp;<span>₱4,999</span></h3>
+          <img class="card-text" src="images/gadgets/laptop3.jpg" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart12">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">1.3k sold</span>
+
+        </div>
+      </div>
+    </div>
+  </section><br>
+
+  <section>
+    <div class="d-flex">
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">Iphone 13</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱60,000 </span>&nbsp;&nbsp;&nbsp;<span>₱5,000</span></h3>
+          <img class="card-text" src="images/gadgets/phone1.jpg" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart13">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">987 sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">Iphone 11</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱70,000 </span>&nbsp;&nbsp;&nbsp;<span>₱5,000</span></h3>
+          <img class="card-text" src="images/gadgets/phone2.jpg" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart14">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">23k sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">korean denim short</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱299 </span>&nbsp;&nbsp;&nbsp;<span>₱99.00</span></h3>
+          <img class="card-text" src="images/women/women9.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart15">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">34k sold</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin:0 20px 0 20px;">
+        <div class="card-body">
+          <h5 class="card-title">sexy dress unicorn</h5>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱199 </span>&nbsp;&nbsp;&nbsp;<span>₱99.00</span></h3>
+          <img class="card-text" src="images/kids/kid6.PNG" alt="" width="100%" height="300px"><br>
+          <span>🆓🚚</span><br>
+          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cart16">Add to Cart</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyNow1">Buy Now</a>
+          <span style="font-size:15px;padding-left: 70%;font-weight:bolder;">6 sold</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!------------------- MODALS ---------------------->
+  <!-- Add to cart Modal  1 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart1">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">Nokia 105</h3>
+          <div class="d-flex">
+            <img src="images/gadgets/cp1.PNG" class="img-fluid rounded-start" width="60%">
+            <p class="card-text"> <br><br> Feature Phone: <br>Screen size:1.77inches<br>phone model: Nokia 105 <br>bat.
+              capacity: 800mah <br> stock: 434</p>
+
+          </div><br>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱1,499.00 </span>&nbsp;&nbsp;&nbsp;<span>₱299.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn1()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Add to cart Modal  2 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart2">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">Realme C21y case</h3>
+          <div class="d-flex">
+            <img src="images/gadgets/cp18.PNG" class="img-fluid rounded-start" width="60%">
+            <p class="card-text"> <br><br> Product Specification <br> Material:Neoprene <br>warranty: no warranty
+              <br>Applicable mobile: OPPO <br>Case type: Others <br> Stock: 4000 <br>Ship from: MAinland china</p>
+          </div>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱99.00 </span>&nbsp;&nbsp;&nbsp;<span>₱35.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn2()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  3 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart3">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">diflated pool</h3>
+          <img src="images/kids/kid17.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Description <br><br> Name: Inflatable Pool <br>Size: 100*40cm/39.37*15.75in <br>
+            ships from: Mainland china</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱1,499.00 </span>&nbsp;&nbsp;&nbsp;<span>₱999.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn3()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  4 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart4">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">Hawaiian flower men polo</h3>
+          <img src="images/men/men16.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Description <br><br> Pattern: others <br>Material : cotton <br>stocks: 5
+            <br>ships from: Mainland china</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱180.00 </span>&nbsp;&nbsp;&nbsp;<span>₱99.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn4()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  5 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart5">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">Nike basketball shoes</h3>
+          <img src="images/men/men8.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Description <br><br> color: black red <br>ship from: metro manila <br>size: 40
+            <br>stock: 589</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱1,599.00 </span>&nbsp;&nbsp;&nbsp;<span>₱499.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn5()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  6 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart6">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">18k saudi gold money tree</h3>
+          <img src="images/men/men10.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Description <br><br> material: saudi gold 18k <br> size: 16inches <br> ship from:
+            metro manila</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱350.00 </span>&nbsp;&nbsp;&nbsp;<span>₱199.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn6()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  7 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart7">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">womens fairy mesh dress</h3>
+          <img src="images/women/women11.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Description <br><br> Neckline: others <br>sleeve length: short sleeve
+            <br>occasion: casual <br>pluz size: no</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱499.00 </span>&nbsp;&nbsp;&nbsp;<span>₱199.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn7()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  8 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart8">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">white printed polo</h3>
+          <img src="images/men/men13.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Description <br><br> COlor: grey <br> Size: Medium <br> ship from: Metro Manila
+          </p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱399.00 </span>&nbsp;&nbsp;&nbsp;<span>₱59.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn8()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  9 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart9">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">Vintage Style Heart Pendant Bracelet</h3>
+          <img src="images/women/women7.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Specification <br><b> Necklace length: short <br> gender: female <br> stock: 1039
+              <br> ship from : metro manila</b></p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱99.00 </span>&nbsp;&nbsp;&nbsp;<span>₱49.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn9()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  10 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart10">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">Z8350 quadcore laptop</h3>
+          <img src="images/gadgets/laptop1.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Specification <br><br> CPU type: Intel Atom <br> Screen size: 14 inches <br>
+            Graphic card: Integrated graphics <br> Operating system: Windows 10 <br> touch screen: non touch </p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱9,000 </span>&nbsp;&nbsp;&nbsp;<span>₱5,000</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn10()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  11 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart11">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color:#FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">Korean Woman Flat Slipper</h3>
+          <img src="images/women/women5.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">product Description <br><br> Size: small <br> ship from: cagayan <br> stock: 38pcs</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱105 </span>&nbsp;&nbsp;&nbsp;<span>₱55</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn11()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  12 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart12">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">dell dual core</h3>
+          <img src="images/gadgets/laptop3.jpg" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Specification <br><br> OS: windows 10 <br> CPU i5-1035G1 10nm <br>Quad core
+            speed: 1.0GHz</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱14,000 </span>&nbsp;&nbsp;&nbsp;<span>₱4,999</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn12()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  13 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart13">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">Iphone 13</h3>
+          <img src="images/gadgets/phone1.jpg" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Specification <br><br> Brand new <br> Original <br> stocks: 20pcs <br> nice
+            camera.</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱60,000 </span>&nbsp;&nbsp;&nbsp;<span>₱5,000</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn13()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  14 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart14">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">Iphone 11</h3>
+          <img src="images/gadgets/phone2.jpg" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Description <br><br> camea: clear camera <br> secondhand <br> used original phone
+          </p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱70,000 </span>&nbsp;&nbsp;&nbsp;<span>₱5,000</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn14()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  15 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart15">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">korean denim short</h3>
+          <img src="images/women/women9.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Description <br><br> style: korean <br> waist height: high waist <br> plus size:
+            no <br>petite: yes</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱199 </span>&nbsp;&nbsp;&nbsp;<span>₱99.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn15()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add to cart Modal  16 Updates-->
+  <div class="modal fade" tabindex="-1" id="cart16">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style="background-color: #FFC0CB; font-family: 'Lora', serif;">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="card-title">sexy dress unicorn</h3>
+          <img src="images/kids/kid6.PNG" class="img-fluid rounded-start" width="60%">
+          <p class="card-text">Product Description <br><br> Actual photo <br> photoshoot <br>Birthday set <br> party
+            dress</p>
+          <h3 class="card-subtitle mb-2 text-muted"><span class="text-danger"
+              style="text-decoration-line:line-through;">₱199 </span>&nbsp;&nbsp;&nbsp;<span>₱99.00</span></h3>
+          <div class="d-flex">
+            <span style="margin-left:15%; margin-top: 10px;">QUANTITY </span>
+            <input type="number" class="" name="" id="" min="1" style="width: 30%; margin-left: 10px;">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-warning" onclick="cartBtn16()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------- BUY NOW MODAL----------------------->
+  <div class="modal" tabindex="-1" id="buyNow1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Check Out</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" placeholder="Name" class="form-control"><br>
+          <input type=" cp number" placeholder="Enter Number" class="form-control"><br>
+          <input type="text" placeholder="Address" class="form-control"><br>
+          <input type="text" placeholder="Zip Code" class="form-control"><br>
+          <label for="" class="fw-bold">PAYMENT <span class="text-danger">*</span></label>
+          <select name="" id="" class="form-control">
+            <option value="">Gcash</option>
+            <option value="">Cedit/Debit Card</option>
+            <option value="">Paymaya</option>
+            <option value="">Cash On Delivery</option>
+            <option value="">WeePay</option>
+          </select>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-danger" onclick="buyNow1()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ADDED TO CART NOTIF -->
+  <div class="modal" tabindex="-1" id="addedtoCart">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold"></h5>
+        </div>
+        <div class="modal-body text-center">
+          <h3>Added to Cart</h3>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placed order -->
+  <div class="modal" tabindex="-1" id="buyNow">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold"></h5>
+        </div>
+        <div class="modal-body text-center">
+          <h3>Placed order successfully!</h3>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+  function cartBtn1() {
+    $('#addedtoCart').modal('show')
+    $('#cart1').modal('hide')
+  }
+  function cartBtn2() {
+    $('#addedtoCart').modal('show')
+    $('#cart2').modal('hide')
+  }
+  function cartBtn3() {
+    $('#addedtoCart').modal('show')
+    $('#cart3').modal('hide')
+  }
+  function cartBtn4() {
+    $('#addedtoCart').modal('show')
+    $('#cart4').modal('hide')
+  }
+  function cartBtn5() {
+    $('#addedtoCart').modal('show')
+    $('#cart5').modal('hide')
+  }
+  function cartBtn6() {
+    $('#addedtoCart').modal('show')
+    $('#cart6').modal('hide')
+  }
+  function cartBtn7() {
+    $('#addedtoCart').modal('show')
+    $('#cart7').modal('hide')
+  }
+  function cartBtn8() {
+    $('#addedtoCart').modal('show')
+    $('#cart8').modal('hide')
+  }
+  function cartBtn9() {
+    $('#addedtoCart').modal('show')
+    $('#cart9').modal('hide')
+  }
+  function cartBtn10() {
+    $('#addedtoCart').modal('show')
+    $('#cart10').modal('hide')
+  }
+  function cartBtn11() {
+    $('#addedtoCart').modal('show')
+    $('#cart11').modal('hide')
+  }
+  function cartBtn12() {
+    $('#addedtoCart').modal('show')
+    $('#cart12').modal('hide')
+  }
+  function cartBtn13() {
+    $('#addedtoCart').modal('show')
+    $('#cart13').modal('hide')
+  }
+  function cartBtn14() {
+    $('#addedtoCart').modal('show')
+    $('#cart14').modal('hide')
+  }
+  function cartBtn15() {
+    $('#addedtoCart').modal('show')
+    $('#cart15').modal('hide')
+  }
+  function cartBtn16() {
+    $('#addedtoCart').modal('show')
+    $('#cart16').modal('hide')
+  }
+</script>
+
+<script>
+  function buyNow1() {
+    $('#buyNow').modal('show')
+    $('#buyNow1').modal('hide')
+  }
+  function buyNow2() {
+    $('#buyNow').modal('show')
+    $('#buyNow2').modal('hide')
+  }
+  function buyNow3() {
+    $('#buyNow').modal('show')
+    $('#buyNow3').modal('hide')
+  }
+  function buyNow4() {
+    $('#buyNow').modal('show')
+    $('#buyNow4').modal('hide')
+  }
+  function buyNow5() {
+    $('#buyNow').modal('show')
+    $('#buyNow5').modal('hide')
+  }
+  function buyNow6() {
+    $('#buyNow').modal('show')
+    $('#buyNow6').modal('hide')
+  }
+  function buyNow7() {
+    $('#buyNow').modal('show')
+    $('#buyNow7').modal('hide')
+  }
+  function buyNow8() {
+    $('#buyNow').modal('show')
+    $('#buyNow8').modal('hide')
+  }
+  function buyNow9() {
+    $('#buyNow').modal('show')
+    $('#buyNow9').modal('hide')
+  }
+  function buyNow10() {
+    $('#buyNow').modal('show')
+    $('#buyNow10').modal('hide')
+  }
+  function buyNow11() {
+    $('#buyNow').modal('show')
+    $('#buyNow11').modal('hide')
+  }
+  function buyNow13() {
+    $('#buyNow').modal('show')
+    $('#buyNow13').modal('hide')
+  }
+  function buyNow14() {
+    $('#buyNow').modal('show')
+    $('#buyNow14').modal('hide')
+  }
+  function buyNow15() {
+    $('#buyNow').modal('show')
+    $('#buyNow15').modal('hide')
+  }
+  function buyNow16() {
+    $('#buyNow').modal('show')
+    $('#buyNow16').modal('hide')
+  }
+</script>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="bootstrap/jquery-3.6.0.min.js"></script>
+    <title>My cart</title>
+</head>
+
+<style>
+    .fas{
+        margin-left: 10px;
+    }
+</style>
+
+<body style="background-color:linen;">
+   
+    <div style="background-color:#FFC0CB;">
+        <a href="home.html"><i class='fas fa-arrow-alt-circle-left' style='font-size:36px;color:red'></i></a>
+        <span style="margin-left:40% ;font-weight:900;color:mediumvioletred;font-size:300%;font-family: 'Uchen', serif;">Jes<span
+            style="color:rebeccapurple;font-family: 'Uchen', serif;">SHAN<i class="fas fa-shopping-basket"></i></span></span>
+</div>
+      <div>
+<h1>Shopping Cart</h1>
+</div>
+<div class="container">
+    <h2 class="container-fluid text-danger">CART</h2>
+    <hr>
+<div class="d-flex">
+    <div class="card mb-3" style="max-width: 540px; margin-right: 20px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/men/men12.PNG" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="card-title">Men pocket sleeve</h5>
+                    <p class="card-text"><small class="text-muted">x1</small></p>
+                    <h2 class="card-text"><small class="text-dark">₱180.00</small></h2>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 540px; margin-right: 20px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/gadgets/cp11.PNG" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="card-title">Samsung A52s</h5>
+                    <p class="card-text"><small class="text-muted">x1</small></p>
+                    <h2 class="card-text"><small class="text-dark">₱1,999.00</small></h2>
+           
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="d-flex">
+    <div class="card mb-3" style="max-width: 540px; margin-right: 20px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/kids/kid15.PNG" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="card-title">Assorted animals</h5>
+                    <p class="card-text"><small class="text-muted">x2</small></p>
+                    <h2 class="card-text"><small class="text-dark">₱798.00</small></h2>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 540px; margin-right: 20px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/women/women11.PNG" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="card-title">womens fairy mesh dress</h5>
+                    <p class="card-text"><small class="text-muted">x1</small></p>
+                    <h2 class="card-text"><small class="text-dark">₱499.00</small></h2>
+              
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="d-flex">
+    <div class="card mb-3" style="max-width: 540px; margin-right: 20px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/women/women13.PNG" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="card-title">Girl large bow hairpins</h5>
+                    <p class="card-text"><small class="text-muted">x3</small></p>
+                    <h2 class="card-text"><small class="text-dark">₱459.00
+                    </small></h2>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+</div>
+
+<div class="container">
+    <button class="btn btn-danger" style="float:right;" onclick="buyNow2()">Check Out</button>
+</div>
+
+
+
+<div class="modal" tabindex="-1" id="buyNow1" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Check Out</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input type="text" class="form-control" placeholder="Full Name"><br>
+            <input type="text" name="" id="" class="form-control" placeholder="Address">
+          <label for="" class="fw-bold">PAYMENT <span class="text-danger">*</span></label>
+          <select name="" id="" class="form-control">
+            <option value="">Gcash</option>
+            <option value="">Cedit/Debit Card</option>
+            <option value="">Paymaya</option>
+            <option value="">Cash On Delivery</option>
+            <option value="">WeePay</option>
+          </select>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-danger" onclick="buyNow1()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- PLACED ORDER -->
+  <div class="modal" tabindex="-1" id="buyNow">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold"></h5>
+        </div>
+        <div class="modal-body text-center">
+          <h3>Order Success</h3>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal" >Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+
+function buyNow1(){
+  $('#buyNow').modal('show')
+  $('#buyNow1').modal('hide')
+  setTimeout("location.href = 'home.html';", 2500);
+  }
+
+  function buyNow2(){
+    $('#buyNow1').modal('show')
+  }
+</script>
